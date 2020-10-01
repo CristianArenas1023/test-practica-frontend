@@ -1,0 +1,34 @@
+/* Fuente */
+/* /Fuente */
+/* Paleta de colores */
+/* Amarillo */
+/* Azul */
+/* Gris claro */
+/* Verde */
+/* /Paleta de colores */
+/* Iconos */
+/* APP ROOT */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif; }
+
+html {
+  font-size: 16px; }
+
+body {
+  background-color: #eee; }
+
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: auto; }
+
+/* /APP ROOT */
+@media only screen and (max-width: 768px) {
+  .item__price {
+    font-size: 2.7rem; } }
+
+@media not speech {
+  .sr-only {
+    display: none; } }

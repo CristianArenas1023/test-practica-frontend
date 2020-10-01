@@ -1,0 +1,32 @@
+@import "./../_variables.scss";
+
+/* APP ROOT */
+*{
+    margin:0;
+    padding:0;
+    font-family: $font-family;
+}
+html{
+    font-size: $font-size;
+}
+body{
+    background-color: $color-light-gray-color;
+}
+.container{
+    width: 100%;
+    max-width: $content-width;
+    margin: auto;
+}
+/* /APP ROOT */
+
+@media only screen and (max-width : 768px){
+    .item__price{
+        font-size: 2.7rem;
+    }
+}
+
+@media not speech {
+    .sr-only {
+        display: none;
+    }
+}

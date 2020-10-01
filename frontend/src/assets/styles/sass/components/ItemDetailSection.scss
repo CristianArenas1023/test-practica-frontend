@@ -1,0 +1,102 @@
+@import "./../_variables.scss";
+@import "./../_mixins.scss";
+
+/* SECTION ITEM DETAIL */
+.item-detail{
+    padding: 2rem;
+    display: flex;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+    @include align-items(flex-start);
+}
+.item-detail__image-container{
+    width: 80%;
+    max-width: $item-image-width;
+    height: $item-image-height;
+    @include flex-grow(1);
+}
+.item-detail__data-container{
+    width: 20%;
+    @include flex-grow(0);
+}
+.item-detail__description-container{
+    @include order(3);
+    @include flex-grow(0);
+    @include flex-basis(100%);
+    max-width: $item-image-width;
+}
+.item-detail__other-data{
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    display: block;
+    @include text-color-gray-scale(2);
+}
+.item-detail__other-data--free-shipping{
+    color: $color-free-shipping;
+}
+.item-detail__title{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include text-color-gray-scale(1);
+}
+.item-detail__price{
+    @include text-color-gray-scale(1);
+    font-size: 2.875rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+}
+.item-detail__price__decimals{
+    font-size: 1.5rem;
+}
+.item-detail__description-title{
+    font-size: 1.75rem;
+    @include text-color-gray-scale(1);
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+}
+.item-detail__description{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    @include text-color-gray-scale(2);
+    line-height: 1.5rem;
+}
+
+.button{
+    border:none;
+    padding: .5rem;
+    color:#fff;
+    @include border-radius($border-radius);
+    @include background-color-gray-scale(3);
+}
+.button:hover{
+    cursor: pointer;
+}
+.button--block{
+    width: 100%;
+}
+.button--primary{
+    background-color: $color-secondary;
+}
+
+@media only screen and (max-width : 768px){
+
+    /* SECTION ITEM DETAIL */
+    .item-detail__image-container__image{
+        width:100%;
+    }
+    .item-detail__image-container{
+        width: 100%;
+        max-width: none;
+    }
+    .item-detail__data-container{
+        width: 100%;
+    }
+    /* /SECTION ITEM DETAIL */
+}
+/* /SECTION ITEM DETAIL */

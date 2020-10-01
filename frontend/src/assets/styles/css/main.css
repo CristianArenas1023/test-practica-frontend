@@ -1,0 +1,23 @@
+/* Fuente */
+/* /Fuente */
+/* Paleta de colores */
+/* Amarillo */
+/* Azul */
+/* Gris claro */
+/* Verde */
+/* /Paleta de colores */
+/* Iconos */
+/* MAIN */
+.main {
+  background-color: #eee;
+  padding-bottom: 4rem; }
+
+.section {
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px; }
+
+/* /MAIN */

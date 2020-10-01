@@ -1,0 +1,13 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+/* MAIN */
+.main{
+    background-color: $color-light-gray-color;
+    padding-bottom: 4rem;
+}
+.section{
+    background-color: $background-section-color;
+    @include border-radius($border-radius);
+}
+/* /MAIN */

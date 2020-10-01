@@ -1,0 +1,16 @@
+/* SECTION MESSAGE */
+.section--message {
+  margin-top: 1rem;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box; }
+
+.section--message__container {
+  text-align: center; }
+
+.section--message__container__message {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #666666; }
+
+/* /SECTION MESSAGE */

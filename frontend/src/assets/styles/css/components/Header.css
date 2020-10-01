@@ -1,0 +1,75 @@
+/* Fuente */
+/* /Fuente */
+/* Paleta de colores */
+/* Amarillo */
+/* Azul */
+/* Gris claro */
+/* Verde */
+/* /Paleta de colores */
+/* Iconos */
+/* HEADER */
+.header {
+  background-color: #FFE600;
+  color: #333333;
+  height: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center; }
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.header__logo-container {
+  padding: 0.3125rem;
+  margin-right: 0.75rem; }
+
+.header__logo-container__logo {
+  background-image: url("../../../images/Logo_ML.png");
+  background-size: 53px 36px;
+  -webkit-background-size: 53px 36px;
+  -moz-background-size: 53px 36px;
+  -ms-background-size: 53px 36px;
+  -o-background-size: 53px 36px;
+  width: 53px;
+  height: 36px;
+  display: block; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .header__logo-container__logo {
+      background-image: url("../../../images/Logo_ML.png");
+      background-size: 53px 36px;
+      -webkit-background-size: 53px 36px;
+      -moz-background-size: 53px 36px;
+      -ms-background-size: 53px 36px;
+      -o-background-size: 53px 36px;
+      background-image: url("../../../images/Logo_ML@2x.png");
+      width: 53px;
+      height: 36px;
+      display: block; } }
+
+.search-bar {
+  display: block;
+  position: relative; }
+
+/* /HEADER */

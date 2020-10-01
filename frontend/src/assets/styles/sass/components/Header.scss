@@ -1,0 +1,38 @@
+@import "./../_variables.scss";
+@import "./../_mixins.scss";
+
+/* HEADER */
+.header{
+    background-color: $color-primary;
+    @include text-color-gray-scale(1);
+    height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+    @include justify-content(center);
+    @include align-items(center);
+}
+.header__container{
+    display: flex;
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+    @include justify-content(flex-start);
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.header__logo-container{
+    padding: 0.3125rem;
+    margin-right: 0.75rem;
+}
+.header__logo-container__logo{
+    @include display-icon($logo-icon-src, $logo-icon-width, $logo-icon-height);
+    @include display-retina-icon($logo-icon-src, $logo-icon-width, $logo-icon-height);
+}
+.search-bar{
+    display: block;
+    position: relative;
+}
+
+/* /HEADER */

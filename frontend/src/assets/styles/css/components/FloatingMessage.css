@@ -1,0 +1,30 @@
+/* Fuente */
+/* /Fuente */
+/* Paleta de colores */
+/* Amarillo */
+/* Azul */
+/* Gris claro */
+/* Verde */
+/* /Paleta de colores */
+/* Iconos */
+/* FLOATING MESSAGE */
+.floating-message {
+  padding: 1rem;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.14), 0px 3px 4px 0px rgba(0, 0, 0, 0.12), 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background-color: #fff; }
+
+.floating-message__message {
+  color: #333333;
+  text-align: justify;
+  font-weight: lighter;
+  margin-bottom: 1rem; }
+
+/* /FLOATING MESSAGE */

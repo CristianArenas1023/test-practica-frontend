@@ -1,0 +1,28 @@
+@import "./../_mixins.scss";
+
+/* BREADCRUMB */
+.breadcrumb{
+    /* Para mejorar el contraste, seteo una escala de gris 1 en lugar de 3 como está en las especificaicones. */
+    @include text-color-gray-scale(1);
+    font-size: 0.875rem; /*14px*/
+    padding: 1rem;
+    list-style-type: none;
+}
+.breadcrumb__item{
+    display: inline;
+}
+.breadcrumb__item:not(:first-child)::before{
+    content: ">";
+    padding: .5rem;
+}
+
+@media only screen and (max-width : 768px){
+    /* BREADCRUMB */
+    .breadcrumb{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    /* /BREADCRUMB */
+}
+
+/* /BREADCRUMB */

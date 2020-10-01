@@ -1,0 +1,8 @@
+Fuente de los assets no proporcionados por el ejercicio:
+
+* picture_not_found.svg : https://www.flaticon.com/free-icon/picture_149094
+
+* no_results.svg: https://listado.mercadolibre.com.ar/
+
+* loading_spin.svg: https://loading.io/
+

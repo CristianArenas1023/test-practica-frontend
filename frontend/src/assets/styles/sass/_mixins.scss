@@ -1,0 +1,107 @@
+@mixin text-color-gray-scale($level){
+    color: rgba(51*$level,51*$level,51*$level,1.0);
+}
+
+@mixin background-color-gray-scale($level){
+    background-color: rgba(51*$level,51*$level,51*$level,1.0);
+}
+
+@mixin center-in-parent(){
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+@mixin clear-float-with-after-pseudoelement(){
+    content: "";
+    display: block;
+    width: 100%;
+    clear:both;
+}
+
+@mixin display-icon($icon-src, $icon-width, $icon-height, $factor: 1){
+    background-image: url("../../../images/#{$icon-src}.png");
+    background-size: $icon-width $icon-height;
+    -webkit-background-size: $icon-width $icon-height;
+    -moz-background-size: $icon-width $icon-height;
+    -ms-background-size: $icon-width $icon-height;
+    -o-background-size: $icon-width $icon-height;
+    @if $factor != 1 {
+        background-image: url("../../../images/#{$icon-src}@#{$factor}x.png");
+    }
+    width: $icon-width;
+    height: $icon-height;
+    display: block;
+}
+
+@mixin display-retina-icon($icon-src, $icon-width, $icon-height, $factor: 1){
+    @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+        @include display-icon($icon-src, $icon-width, $icon-height, 2);
+    }
+}
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+    
+@mixin flex-direction($value){
+    flex-direction: $value;
+    -webkit-flex-direction: $value;
+    -moz-flex-direction: $value;
+}
+
+@mixin flex-wrap($value){
+    flex-wrap: $value;
+    -webkit-flex-wrap: $value;
+    -moz-flex-wrap: $value;
+}
+
+@mixin justify-content($value){
+    justify-content: $value;
+    -webkit-justify-content: $value;
+    -moz-justify-content: $value;
+}
+
+@mixin align-items($value){
+    align-items: $value;
+    -webkit-align-items: $value;
+}
+ 
+@mixin flex-grow($value){
+    flex-grow: $value;
+    -webkit-flex-grow: $value;
+    -moz-flex-grow: $value;
+}
+
+@mixin order($value){
+    order: $value;
+    -webkit-order: $value;
+    -moz-order: $value;
+}
+
+@mixin flex-basis($value){
+    flex-basis: $value;
+    -webkit-flex-basis: $value;
+    -moz-flex-basis: $value;
+}
+
+@mixin flex-shrink($value){
+    flex-shrink: $value;
+    -webkit-flex-shrink: $value;
+    -moz-flex-shrink: $value;
+}
+
+@mixin align-self($value){
+    align-self:$value;
+    -webkit-align-self:$value;
+    -moz-align-self:$value;
+}
